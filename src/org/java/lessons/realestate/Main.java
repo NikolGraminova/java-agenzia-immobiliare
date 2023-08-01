@@ -34,14 +34,5 @@ public class Main {
         System.out.println("The most viewed is: " + properties.mostViewed2());
 
         System.out.println("Found property: " + properties.findProperty("CC333"));
-
-
-
-
-
-
-
-
-
     }
 }

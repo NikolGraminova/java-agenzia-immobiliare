@@ -73,7 +73,7 @@ public abstract class Property {
 
     @Override
     public String toString() {
-        return "RealEstate{" +
+        return "\n RealEstate{" +
                 "code='" + code + '\'' +
                 ", address='" + address + '\'' +
                 ", postCode=" + postCode +
