@@ -18,22 +18,31 @@ public class EstateAgency {
         properties.add(property);
     }
 
-    public void findProperty(String code){
+    public Property findProperty(String code){
         for (Property property : properties){
             if (code.equalsIgnoreCase(property.getCode())){
-                System.out.println("Found property");
+                return property;
             }
         }
+        return null;
     }
 
-    public void mostViewed(){
+    public Property mostViewed2(){
+        Property mostViewedProperty = null;
         int count = 0;
         for (Property property : properties){
-            if (property.interestedAmount() > count){
-                count = property.interestedAmount();
-                System.out.println("Property with most views: " + count);
+            if (property.getInterestedPeople() > count){
+                mostViewedProperty = property;
+                count = mostViewedProperty.getInterestedPeople();
             }
-
         }
+        return mostViewedProperty;
+    }
+
+    @Override
+    public String toString() {
+        return "EstateAgency{" +
+                "properties="  +  properties + "\n" +
+                '}';
     }
 }

@@ -29,6 +29,7 @@ public abstract class Property {
     private int postCode;
     private String city;
     private int area;
+    private int interestedPeople = 0;
 
 
     // CONSTRUCTORS
@@ -57,11 +58,13 @@ public abstract class Property {
     public int getArea() {
         return area;
     }
-
+    public int getInterestedPeople() {
+        return interestedPeople;
+    }
 
     // METHODS
-    public int interestedAmount(){
-        return 0;
+    public void interestedAmount(int amount){
+        interestedPeople += amount;
     }
 
     public void setArea(int area) {
