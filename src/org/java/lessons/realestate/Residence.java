@@ -1,6 +1,6 @@
 package org.java.lessons.realestate;
 
-public class Residence extends RealEstate{
+public class Residence extends Property {
 
     // FIELDS
     private int rooms;

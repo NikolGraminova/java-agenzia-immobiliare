@@ -19,14 +19,9 @@ Per le ville è previsto, in aggiunta rispetto all’abitazione, la dimensione i
 Definire per ciascuna delle tre classi il metodo toString() in modo da fornire una descrizione completa dell’immobile.
 Definire nella classe Immobile il metodo reimpostaSuperfici che prende in input la nuova superficie.
 Implementare nella classe Villa l’overload di questo metodo. In questo caso prenderà i parametri superficie e superficieGiardino.
-Definire una classe AgenziaImmobiliare che contiene una lista di immobili e presenta
-un metodo per aggiungere un immobile
-un metodo per la ricerca di un immobile a partire dal codice alfanumerico
-un metodo per restituire l’immobile che ha avuto il maggior numero di visualizzazioni
-Creare una classe Main con metodo main nel quale testare tutte le funzionalità delle classi
 */
 
-public abstract class RealEstate {
+public abstract class Property {
 
     // FIELDS
     private String code;
@@ -37,7 +32,7 @@ public abstract class RealEstate {
 
 
     // CONSTRUCTORS
-    public RealEstate(String code, String address, int postCode, String city, int area) {
+    public Property(String code, String address, int postCode, String city, int area) {
         this.code = code;
         this.address = address;
         this.postCode = postCode;
@@ -67,6 +62,10 @@ public abstract class RealEstate {
     // METHODS
     public int interestedAmount(){
         return 0;
+    }
+
+    public void setArea(int area) {
+        this.area = area;
     }
 
     @Override

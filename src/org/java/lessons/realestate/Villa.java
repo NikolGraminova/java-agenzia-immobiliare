@@ -13,7 +13,6 @@ public class Villa extends Residence{
     }
 
 
-
     // GETTERS
     public int getGardenArea() {
         return gardenArea;
@@ -21,6 +20,11 @@ public class Villa extends Residence{
 
 
     // METHODS
+    public void setGardenArea(int Area, int gardenArea) {
+        this.setArea(Area);
+        this.gardenArea = gardenArea;
+    }
+
     @Override
     public String toString() {
         return super.toString() +
